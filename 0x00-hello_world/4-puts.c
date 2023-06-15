@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
-int main () {
+/*This function is used to print a certain string. */
+int main(void) {
 	char Strng1[] = "\"Programming is like building a multilingial puzzle";
 
-	puts(Strng1);	       
+	puts(Strng1);       
 
-	return(0);
+	return (0);
 
 }
