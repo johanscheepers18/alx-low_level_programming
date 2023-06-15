@@ -3,7 +3,7 @@
 /**
 *main - Entry point
 *Description: This program is used to print a certain string
-*Retrun: Always 0 (Success)
+*Return: Always 0
 */
 int main(void)
 {
