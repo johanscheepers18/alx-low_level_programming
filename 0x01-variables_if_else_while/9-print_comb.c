@@ -9,23 +9,15 @@
 int main(void)
 {
 	int asciiArr[] = {44, 32};
-	int firstNum, secNum, ascSym;
+	int num, ascSym;
 
-	for (firstNum = 48 ; firstNum < 58 ; firstNum++)
+	for (num = 48 ; num < 58 ; num++)
 	{
-		for (secNum = 48 ; secNum < 58 ; secNum++)
+		putchar(num);
+
+		for (ascSym = 0 ; ascSym < 2 ; ascSym++)
 		{
-			if (firstNum != 48)
-			{
-				putchar(firstNum);
-			}
-
-			putchar(secNum);
-
-			for (ascSym = 0 ; ascSym < 2 ; ascSym++)
-			{
-				putchar(asciiArr[ascSym]);
-			}
+			putchar(asciiArr[ascSym]);
 		}
 	}
 	putchar('\n');
