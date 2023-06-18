@@ -3,7 +3,12 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ * Description: This program is used to compare the last digit of n,
+ * to either five, six or zero.
+ * Return: Always 0
+ */
 int main(void)
 {
 	int n, lastDigit;
@@ -22,7 +27,8 @@ int main(void)
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n"
+				, n, lastDigit);
 	}
 	return (0);
 }
