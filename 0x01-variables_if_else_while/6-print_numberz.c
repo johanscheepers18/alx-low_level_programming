@@ -8,7 +8,10 @@
 int main(void)
 {
 	int num;
-
+	/*
+	 * using putchar() 48 is printed as '1' using ASCII
+	 * and 58 is printed as '9'.
+	 */
 	for (num = 48 ; num < 58 ; num++)
 	{
 		putchar(num);
