@@ -10,7 +10,7 @@
 int main(void)
 {
 	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
-	
+
 	char letter;
 
 	int i, x;
