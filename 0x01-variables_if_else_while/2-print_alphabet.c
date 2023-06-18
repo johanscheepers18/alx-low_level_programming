@@ -13,14 +13,11 @@ int main(void)
 
         for (i = 0 ; i <= 26 ; i++)
         {
-                if (alpha[i] == 'y')
+		putchar(alpha[i]);
+
+                if (alpha[i] == 'z')
                 {
-                        putchar(alpha[i]);
                         putchar('\n');
-                }
-                else
-                {
-                        putchar(alpha[i]);
                 }
         }
 
