@@ -10,6 +10,8 @@
 int main(void)
 {
 	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
+	
+	char letter;
 
 	int i, x;
 
@@ -27,10 +29,11 @@ int main(void)
 
 			else if (x == 1)
 			{
-				putchar(toupper(alpha[i]));
+				letter = toupper(alpha[i]);
+				putchar(letter);
 			}
 
-			if (alpha[i] == 'z' || alpha[i] == 'Z')
+			if (letter == 'Z')
 			{
 				putchar('\n');
 			}
