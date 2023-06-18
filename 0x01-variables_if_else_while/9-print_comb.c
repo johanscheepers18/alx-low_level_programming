@@ -15,9 +15,12 @@ int main(void)
 	{
 		putchar(num);
 
-		for (ascSym = 0 ; ascSym < 2 ; ascSym++)
+		if (num != 57)
 		{
-			putchar(asciiArr[ascSym]);
+			for (ascSym = 0 ; ascSym < 2 ; ascSym++)
+			{
+				putchar(asciiArr[ascSym]);
+			}
 		}
 	}
 	putchar('\n');
