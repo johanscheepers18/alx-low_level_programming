@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (secNum = 49 ; secNum < 58 ; secNum++)
 		{
-			for (thrdNum = 50 ; thrdNum < 58 ; secNum++)
+			for (thrdNum = 50 ; thrdNum < 58 ; thrdNum++)
 			{
 				if (thrdNum > secNum && secNum > firstNum)
 				{
