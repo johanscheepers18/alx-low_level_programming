@@ -19,7 +19,7 @@ int main(void)
 			{
 				putchar(firstNum);
 				putchar(secNum);
-				
+
 				if (firstNum != 56 || secNum != 57)
 				{
 					for (ascSym = 0 ; ascSym < 2 ; ascSym++)
