@@ -10,18 +10,18 @@ int main(void)
 {
 	int firstNum, secNum, thrdNum;
 
-	for (firstNum = 48 ; firstNum < 56 ; firstNum++)
+	for (firstNum = 48 ; firstNum < 58 ; firstNum++)
 	{
-		for (secNum = 48 ; secNum < 57 ; secNum++)
+		for (secNum = 49 ; secNum < 58 ; secNum++)
 		{
-			for (thrdNum = 48 ; thrdNum < 58 ; secNum++)
+			for (thrdNum = 50 ; thrdNum < 58 ; secNum++)
 			{
 				if (thrdNum > secNum && secNum > firstNum)
 				{
 					putchar(firstNum);
 					putchar(secNum);
 					putchar(thrdNum);
-					if (firstNum != 55)
+					if (firstNum != 55 || secNum != 56)
 					{
 						putchar(44);
 						putchar(32);
