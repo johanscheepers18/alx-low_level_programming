@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * print_last_digit - entry point
@@ -9,12 +10,7 @@ int print_last_digit(int x)
 {
 	int i;
 
-	if (x < 0)
-	{
-		x = x - x * 2;
-	}
-
-	i = x % 10;
+	i = abs(x) % 10;
 
 	_putchar(i + '0');
 
