@@ -2,6 +2,8 @@
 
 /**
  * add - entry point
+ * @x: first integer
+ * @y: second integer
  * Description: this program is used to add two integers
  * Return: returns the answer of x + y
  */
