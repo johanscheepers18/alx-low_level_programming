@@ -3,6 +3,7 @@
 /**
  * print_sign: Entry point
  * @n: is used as the input for the number
+ * Description: This program is used to compare the number to zero.
  * Return: 1 if n is greater than zero, 0 if n is zero, -1 if n less than zero
  */
 int print_sign(int n)
