@@ -29,4 +29,4 @@ int main(void)
 		y = n;
 	}
 	return (0);
-}	
+}
