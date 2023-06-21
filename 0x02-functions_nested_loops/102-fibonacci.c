@@ -12,7 +12,7 @@ int main(void)
 	x = 1;
 	y = 2;
 
-	for (z = 0 ; z <= 50 ; z++)
+	for (z = 0 ; z < 50 ; z++)
 	{
 		if (z != 49)
 		{
