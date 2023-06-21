@@ -14,7 +14,7 @@ int main(void)
 
 	for (z = 0 ; z <= 50 ; z++)
 	{
-		if (z != 50)
+		if (z != 49)
 		{
 			printf("%ld, ", x);
 		}
@@ -23,7 +23,7 @@ int main(void)
 		{
 			printf("%ld\n", x);
 		}
-		
+
 		n = x + y;
 		x = y;
 		y = n;
