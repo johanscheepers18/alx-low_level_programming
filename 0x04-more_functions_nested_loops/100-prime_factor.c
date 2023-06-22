@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	long int n, largest, x; 
+	long int n, largest, x;
 
 	largest = 0;
-	
+
 	n = 612852475143;
 
 	while (n % 2 == 0)
