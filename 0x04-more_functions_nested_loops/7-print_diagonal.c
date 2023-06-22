@@ -3,11 +3,11 @@
 /**
  * print_diagonal - prints a diagonal line in the terminal
  * @n : the width of the diagonal line
- */ 
+ */
 void print_diagonal(int n)
 {
 	int x, y;
-	
+
 	if (n > 0)
 	{
 		for (x = 0 ; x < n ; x++)
