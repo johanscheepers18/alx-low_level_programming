@@ -1,10 +1,12 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * fizz_buzz - this program is the solution to the popular coding interview
+ * main - this program is the solution to the popular coding interview
  * challange called FizzBuzz
+ * Return: always 0
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int x;
 
@@ -34,4 +36,6 @@ void fizz_buzz(void)
 	}
 
 	putchar('\n');
+
+	return (0);
 }
