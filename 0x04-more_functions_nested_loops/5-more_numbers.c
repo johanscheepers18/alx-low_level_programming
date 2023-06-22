@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * more_numbers - prints all numbers from 0 to 14, 14 times over
+ * more_numbers - prints all numbers from 0 to 14, 10 times over
  */
 void more_numbers(void)
 {
 	int i, n;
 
-	for (i = 0 ; i < 14 ; i++)
+	for (i = 0 ; i < 10 ; i++)
 	{
 		for (n = 0 ; n < 15 ; n++)
 		{
