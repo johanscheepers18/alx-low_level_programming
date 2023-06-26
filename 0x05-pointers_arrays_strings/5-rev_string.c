@@ -10,7 +10,7 @@ void rev_string(char *s)
 	char newS;
 
 	x = 0;
-	
+
 	y = 0;
 
 	for (i = 0 ; s[i] != '\0' ; i++)
@@ -29,4 +29,4 @@ void rev_string(char *s)
 			s[y--] = newS;
 		}
 	}
-}	
+}
