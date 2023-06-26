@@ -19,7 +19,14 @@ void print_rev(char *s)
 	{
 		for (; x != -1 ; x--)
 		{
-			_putchar(s[x]);
+			if (s[x] != '\0')
+			{
+				_putchar(s[x]);
+			}
+			else
+			{
+				continue;
+			}
 
 			if (x - 1 == -1)
 			{
