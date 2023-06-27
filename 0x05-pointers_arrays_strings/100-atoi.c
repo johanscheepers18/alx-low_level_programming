@@ -1,46 +1,45 @@
 #include "main.h"
 
 /**
- * _atoi - converst string to integer
+ * _atoi - converts the string to integer
  * @h: string used to convert to int
+ * Return: Returns 0 if no number is found in the string,
+ * returns f for the number found in the string
  */
 int _atoi(char *h)
 {
-	int i, j, k, x, y, z, a;
+	int a, b, c, d, e, f;
 
-	j = 0;
-	k = 0;
-	x = 0;
-	y = 0;
-	z = 0;
 	a = 0;
+	b = 0;
+	c = 0;
+	d = 0;
+	e = 0;
+	f = 0;
 
-	for (i = 0 ; h[i] != '\0' ; i++)
+	while (h[a] != '\0')
+		a++;
+
+	while (b < a && c == 0)
 	{
-		x++;
-	}
+		if (h[b] == '-')
+			d++;
 
-	while(y < x && z == 0)
-	{
-		if (h[i] == '-')
-			++j;
-
-		if (h[i] >= '0' && h[i] <= '9')
+		if (h[b] <= '9' && h[b] >= '0')
 		{
-			a = s[i] - '0';
-			if (a % 2 == 1)
-				a = -a;
-			k = k * 10 + a;
-			z = 1;
-			if (h[i + 1] < '0' || s[i + 1] > '9')
+			e = h[b] - '0';
+			if (d % 2)
+				e = -e;
+			f = f * 10 + e;
+			c = 1;
+			if (h[b + 1] > '9' || h[b + 1] < '0')
 				break;
-			z = 0;
+			c = 0;
 		}
-		y++;
+		b++;
 	}
-
-	if (z == 0)
+	if (c == 0)
 		return (0);
 
-	return (k);
+	return (f);
 }
