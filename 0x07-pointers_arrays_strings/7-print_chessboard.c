@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_chessboard - used to print a chess board with its pieces
+ * @a: amount of rows
+ * @[8]: amount of collumns
+ */
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
@@ -12,4 +17,4 @@ void print_chessboard(char (*a)[8])
 		}
 		_putchar('\n');
 	}
-}		
+}
