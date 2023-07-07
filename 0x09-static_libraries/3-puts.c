@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * _puts - used to print a string
+ * @str: inputt value using pointer
+ */
 void _puts(char *str)
 {
 	int i, x;

@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * _strpbrk - is used to check if bytes from accept exists in s
+ * @s: string to be used
+ * @accept: butes to use
+ * Return: returns all the bytes that is the same, else return 0
+ */
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j;

@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _strcat - used to add two strings together
+ * @dest: destination of combined strings
+ * @src: string that should be added to dest.
+ * Return: return the dest string using its pointer.
+ */
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;

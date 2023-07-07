@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _atoi - converts the string to integer
+ * @h: string used to convert to int
+ * Return: Returns 0 if no number is found in the string,
+ * returns f for the number found in the string
+ */
 int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;

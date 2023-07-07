@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _strspn - is used to see how many bytes in the first segment of s,
+ * contains the same bytes that appears in accept
+ * @s: the string used
+ * @accept: the bytes that will be used to look for in s
+ * Return: returns the amount of times bytes from accept,
+ * appears in the first segment of s
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, f, flag;
