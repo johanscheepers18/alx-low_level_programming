@@ -13,28 +13,30 @@ char *_strdup(char *str)
 
 	j = 0;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		j++;
 	}
 
-	if (j == 0)
+	newStr = (char *)malloc(j + 1 * sizeof(char));
+
+	if (newStr != NULL)
+	{
+		for (i = 0; i < j; i++)
+		{
+			newStr[i] = str[i];
+		}
+	}
+	else
 	{
 		return (NULL);
 	}
 
-	else
-	{
-		newStr = (char *)malloc(j * sizeof(str));
-
-		if (newStr != NULL)
-		{
-			for (i = 0; i < j; i++)
-			{
-				newStr[i] = str[i];
-			}
-		}
-	}
-
+	newStr[i] = '\0';
 	return (newStr);
 }
