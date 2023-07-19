@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 
 /**
  * print_name - prints the name of a person
@@ -7,14 +8,10 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (f == print_name_uppercase)
-
+	if (name == NULL || f == NULL)
 	{
-		print_name_uppercase(name);
+		return;
 	}
 
-	else
-	{
-		print_name_as_is(name);
-	}
+	f(name);
 }
