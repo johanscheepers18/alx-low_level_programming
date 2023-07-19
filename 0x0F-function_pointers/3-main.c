@@ -20,13 +20,19 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (argv[2] == NULL || argv[2][1] != '\0')
+	if (argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
 	oper = get_op_func(argv[2]);
+
+	if (oper == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
