@@ -5,7 +5,7 @@
 /**
  * sum_them_all - returns sum of all numbers
  * @n: the variadic inputs
- * Returns: returns the sum
+ * Return: returns the sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
