@@ -24,25 +24,27 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	new_node->str = src;
-	last_node = *head;
-	new_node->next = NULL;
-
 	for (i = 0 ; str[i] ; i++)
 		;
 
+	new_node->str = src;
 	new_node->len = i;
+	new_node->next = NULL;
 
 	if (*head == NULL)
 	{
 		*head = new_node;
-		return (NULL);
 	}
 
-	while (last_node->next != NULL)
-		last_node = last_node->next;
+	else
+	{
+		last_node = *head;
 
-	last_node->next = new_node;
-
+		while (last_node->next != NULL)
+		{
+			last_node = last_node->next;
+		}
+		last_node->next = new_node;
+	}
 	return (new_node);
 }
