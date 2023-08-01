@@ -15,7 +15,7 @@ void free_listint2(listint_t **head)
 		{
 			placement = *head;
 			free(placement);
-			*head = *head->next;
+			*head = (*head)->next;
 		}
 
 		*copy = NULL;
