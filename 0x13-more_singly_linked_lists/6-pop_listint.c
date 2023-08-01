@@ -3,7 +3,7 @@
 /**
  * pop_listint - removes a node from the list
  * @head: pointer to the head of the list
- * Returns: the head node value
+ * Return: the head node value
  */
 int pop_listint(listint_t **head)
 {
