@@ -3,7 +3,7 @@
 /**
  * clear_bit - changes bit at the index to 0
  * @n: number range
- * index: index of the bit
+ * @index: index of the bit
  * Return: returns 1 if successful or -1 if it fails
  */
 int clear_bit(unsigned long int *n, unsigned int index)
