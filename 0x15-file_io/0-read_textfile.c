@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * read_textfil - prints the contents of a file
+ * read_textfile - prints the contents of a file
  * @filename: name of the file
  * @letters: the amount of letters that should be printed
  * Return: returns 0 if there is an error, else the word and amount printed
@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t _read, _write;
 	int file;
 	char *copy;
-	
+
 	if (!filename && !letters)
 	{
 		return (0);
