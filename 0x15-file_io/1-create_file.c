@@ -1,28 +1,6 @@
 #include "main.h"
 
 /**
- * len - used to get the len of a string
- * @x: string to be used
- * Return: returns the length of a string else if there is no string return -1
- */
-ssize_t len(const char *x)
-{
-	ssize_t y = 0;
-
-	if (!y)
-	{
-		return (-1);
-	}
-
-	while (*x++)
-	{
-		y++;
-	}
-
-	return (y);
-}
-
-/**
  * create_file - creates a file with content
  * @filename: name of the file
  * @text_content: content to be enterd in the file
@@ -30,32 +8,30 @@ ssize_t len(const char *x)
  */
 int create_file(const char *filename, char *text_content)
 {
-	ssize_t _write;
-	int file;
+	int _read, _write, x = 0;
 
-	if (!filename)
+	if (filename == NULL)
 	{
 		return (-1);
 	}
 
-	file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	if (text_content != NULL)
+	{
+		for (x = 0; text_content[x]; x++)
+		{
+			;
+		}
+	}
 
-	if (file < 0)
+	_read = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	_write = write(_read, text_content, x);
+
+	if (_read == -1 || _write == -1)
 	{
 		return (-1);
 	}
 
-	if (text_content)
-	{
-		_write = write(file, text_content, len(text_content));
-	}
-
-	close(file);
-
-	if (_write < 0)
-	{
-		return (-1);
-	}
+	close(_read);
 
 	return (1);
 }
