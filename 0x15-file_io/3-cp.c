@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(98);
+		exit(97);
 	}
 
 	copy = _size(argv[2]);
