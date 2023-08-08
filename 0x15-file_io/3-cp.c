@@ -61,8 +61,7 @@ int main(int argc, char *argv[])
 	source = open(argv[1], O_RDONLY);
 	_read = read(source, copy, 1024);
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while (_read > 0)
-	{
+	do {
 		if (source  == -1 || _read == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -81,7 +80,7 @@ int main(int argc, char *argv[])
 		}
 		_read = read(source, copy, 1024);
 		dest = open(argv[2], O_WRONLY | O_APPEND);
-	}
+	} while (_read > 0);
 	free(copy);
 	_close(source);
 	_close(dest);
