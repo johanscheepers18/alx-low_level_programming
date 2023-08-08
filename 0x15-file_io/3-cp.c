@@ -38,8 +38,7 @@ void _close(int x)
 	if (y == -1)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't close fd %d\n",
-			x);
+			"Error: Can't close fd %d\n", x);
 		exit(100);
 	}
 }
@@ -65,36 +64,29 @@ int main(int argc, char *argv[])
 	source = open(argv[1], O_RDONLY);
 	_read = read(source, copy, 1024);
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
 	while (_read > 0)
 	{
 		if (source  == -1 || _read == -1)
 		{
 			dprintf(STDERR_FILENO,
-				"Error: Can't read from file %s\n",
-				argv[1]);
+				"Error: Can't read from file %s\n", argv[1]);
 			free(copy);
 			exit(98);
 		}
 
 		_write = write(dest, copy, _read);
-
 		if (dest == -1 || _write == -1)
 		{
 			dprintf(STDERR_FILENO,
-				"Error: Can't write to %s\n",
-				argv[2]);
+				"Error: Can't write to %s\n", argv[2]);
 			free(copy);
 			exit(99);
 		}
-
 		_read = read(source, copy, 1024);
 		dest = open(argv[2], O_WRONLY | O_APPEND);
 	}
-
 	free(copy);
 	_close(source);
 	_close(dest);
-
 	return (0);
 }
